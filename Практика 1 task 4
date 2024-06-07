@@ -1,0 +1,4 @@
+@app.route('/get_time/now')
+def get_time_now():
+    current_time = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+    return f"Exact time: {current_time}"
