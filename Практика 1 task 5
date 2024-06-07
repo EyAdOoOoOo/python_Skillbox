@@ -1,0 +1,4 @@
+@app.route('/get_time/future')
+def get_time_future():
+    current_time_after_hour = (datetime.datetime.now() + datetime.timedelta(hours=1)).strftime("%Y-%m-%d %H:%M:%S")
+    return f"The exact time in an hour will be {current_time_after_hour}"
