@@ -1,0 +1,5 @@
+cars_list = "Chevrolet, Renault, Ford, Lada"
+
+@app.route('/cars')
+def cars():
+    return cars_list
