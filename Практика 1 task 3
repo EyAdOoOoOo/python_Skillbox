@@ -1,0 +1,6 @@
+# List of cat breeds, global scope
+cat_breeds = ["Cornish Rex", "Russian Blue", "Scottish Fold", "Maine Coon", "Munchkin"]
+
+@app.route('/cats')
+def cats():
+    return random.choice(cat_breeds)
