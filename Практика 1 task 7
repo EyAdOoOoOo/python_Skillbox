@@ -1,0 +1,9 @@
+# Define the counter at the global scope
+if 'counter_visits' not in globals():
+    counter_visits = 0
+
+@app.route('/counter')
+def counter():
+    global counter_visits
+    counter_visits += 1
+    return f"This page has been opened {counter_visits} times."
